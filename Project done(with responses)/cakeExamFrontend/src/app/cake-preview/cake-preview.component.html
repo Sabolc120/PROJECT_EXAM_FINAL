@@ -1,0 +1,30 @@
+<section id="bg">
+    <div class="container">
+        <h1 class="cakePage">Torta lap</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>A kép kizárólag illusztráció</h4>
+                <img src="{{cakeDetails.imageUrl}}" class="myimg">
+            </div>
+            <div class="col-sm-6">
+                <p class="cakeTitle">{{cakeDetails.cakeName}}</p>
+                <p class="cakeMain">Fő hozzávaló: {{cakeDetails.mainIngredient}}</p>
+                <form #cakeForm="ngForm" (ngSubmit)="cakeBasket(cakeForm)">
+                    <p class="details">
+                        <label for="age" class="myLabel">Ajándékozott kora: </label> 
+                        <input type="number" ngModel="{{cakeBasketDetails.candle}}" name="candle" id="candle" class="myNumeric"></p>
+                    <input type="hidden" ngModel={{cakeDetails.cakeName}} value="{{cakeDetails.cakeName}}" id="cakeName" name="cakeName">
+                    <input type="hidden" ngModel="{{cakeDetails.id}}" value="{{cakeDetails.id}}" id="cake_basket" name="cake_basket">
+                    <input type="hidden" ngModel="{{cakeDetails.imageUrl}}" value="{{cakeDetails.imageUrl}}" id="cakeImg" name="cakeImg">
+                    <input type="hidden" ngModel="{{cakeDetails.price}}" value="{{cakeDetails.price}}" id="cakePrice" name="cakePrice">
+                    <input type="hidden" ngModel={{CuserId}} value={{CuserId}} value="{{CuserId}}" id="user_cakes_in_baket" name="user_cakes_in_basket">
+                    <input type="hidden" ngModel={{cakeBasketDetails.cake_quantity}} value= "{{cakeBasketDetails.cake_quantity}}" id="cakeQuantity" name="cakeQuantity">
+                    <input type="hidden" ngModel="{{cakeDetails.mainIngredient}}" value= "cakeMainIngredient" id="cakeMainIngredient" name="cakeMainIngredient">
+                    <input type="hidden" ngModel="{{userName}}" value= "{{userName}}" id="userName" name="userName">
+                    <input type="submit" id = "mybutton" class="btn basket" value="Kosárba">
+                </form>
+                <p class="price">Torta ára: {{cakeDetails.price}}ft</p>
+            </div>
+        </div>
+    </div>
+</section>

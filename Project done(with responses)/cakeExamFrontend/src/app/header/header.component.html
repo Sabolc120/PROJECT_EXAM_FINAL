@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/292eb53db4.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="myscr.js"></script>
+    <title>Torta webshop</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="menu">
+                <div>
+                    <img src="https://cdn.discordapp.com/attachments/1035540982101446679/1067119029933834311/logo.png" class="logo">
+                    <ul>
+                        <li *ngIf="!isLoggedIn()"><h4 style="font-style: italic;">Üdv látogató!</h4></li>
+                        <li *ngIf="isLoggedIn()"><h4 style="font-style: italic;">Üdv vásárló!</h4></li>
+                    </ul>
+                    <li *ngIf="isLoggedIn()"><button type="button" class="dropdown-item" (click)="logout()" id="logout">Kijelentkezés</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li  *ngIf="!isLoggedIn()"><a class="dropdown-item" routerLink="registerPage" id="reg">Regisztráció</a></li>
+                        <li *ngIf="!isLoggedIn()"><a class="dropdown-item" routerLink="loginPage" id="loginPage">Bejelentkezés</a></li>
+                        <a class="nav-link" routerLink="myBasket" *ngIf="isLoggedIn()" id="mybasketBtn">Kosaram</a>
+                </div>
+            </div>
+            <div class="container">
+                <a href="#" class="brand">Torta WebShop</a>
+                <div class="container-inner">
+                    <ul>
+                        <li><a href="#">Főoldal</a></li>
+                    </ul>
+                    <!-- ide rakj be még ha kell más mint a főoldal  -->
+                </div>
+                <i class="fas fa-bars" id="menu-btn">Müveletek</i>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

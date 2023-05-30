@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "uREu+y9v5WpRzZCInuDOAIEkizzfDGkPTppUZ0u8RVjpnJXlUax3SOkF33CA+xc5x/TqHZq9SB8q4kofh6tY/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sabol\\Documents\\GitHub\\cakeBackup\\seleniumTestExam\\seleniumTestExam\\seleniumTestExam.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sabol\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\sabol\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\sabol\\.nuget\\packages\\selenium.chrome.webdriver\\85.0.0\\selenium.chrome.webdriver.85.0.0.nupkg.sha512",
+    "C:\\Users\\sabol\\.nuget\\packages\\selenium.support\\4.8.0\\selenium.support.4.8.0.nupkg.sha512",
+    "C:\\Users\\sabol\\.nuget\\packages\\selenium.webdriver\\4.8.0\\selenium.webdriver.4.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}
